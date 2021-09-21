@@ -23,7 +23,7 @@ Here at the inception this begins with the wishlist... can't believe i can't fin
    1. google has it's own extract-your-data facility, have to see what format those come out as
 
 ## app architecture
-1. besides actual app features, any modern app needs a streamlined build process... i use msft DevOps at work but this would be a good opportunity to get up to speed on "github actions ci/cd"
+1. besides actual app features, any modern app needs a streamlined build process... i use msft DevOps at work but this would be a good opportunity to get up to speed on github actions
 1. whether to do a web app vs desktop app... i'm deep into a very dense UX internal LoB React app during the day so i know i could do this in web only but still miss the sweet intersection of real C# object collections with built in onchange/isdirty along with M-V-VM style databinding like WPF
 1. there's also a handful of desktop window features that i believe are only possible via some kind of true desktop app wrapper (electron, react native, etc)
   1. ESC to minimize window (along with close = minimize option)... previously i would've wanted this to a be a minimize to _systray_, but with Windows 11, minimizing to taskbar seems like the new way to go
