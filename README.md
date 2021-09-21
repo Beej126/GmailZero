@@ -11,7 +11,7 @@ Here at the inception this begins with the wishlist... can't believe i can't fin
    3. **forward event** to another address - poor man's approach to integrating with another calendar, i.e. work vs personal
    4. common "today at a glance" views - with either today only showing slots for all hours -or- multiple days with just scheduled events showing
 2. **Gmail adjunct strategy** - lean on the existing gmail web page for anything outside of my own day to day happy path to keep implementation as minimal as possible
-3. common window layout with nav down left side, inbox list next, then current email pane and lastly vertical calendar panel on the right...
+3. common window layout with folder nav down left side, inbox list in the middle, current email reading pane next to the right and lastly a vertical calendar panel on the far right...
 4. put the action buttons above the inbox vs the reading pane so they're always visible even for small window (mailbird annoyance)
 5. multiple inboxes! pretty killer feature i use in the gmail web app... basically it's the idea of showing more "folders" at once than just a primary inbox... couple this with gmail's amazingly robust (albeit unfriendly) filter rules and you can do powerful "auto cleansing", which is very [inbox zero](https://en.wikipedia.org/wiki/Merlin_Mann) zen... i like keeping a "pending" and "kids" view... pending is a manual move but kids vacuums up a ton of different inbound stuff via filters
 6. **favorite folders** - up at the top of the left side nav (missing from mailbird)
