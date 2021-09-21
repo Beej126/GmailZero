@@ -5,11 +5,11 @@ Here at the inception this begins with the wishlist... can't believe i can't fin
 
 ## Wishlist / Design Goals
 1. this essentially starts with mailbird as a decent reference point UI wise and wanting to fix some crucial annoyances
-1. **Full calendar integration**
+2. **Full calendar integration**
    1. #1 **create calendar event from email** (missing from mailbird)
-   1. support **multiple reminders** feature of google calendar (missing from emClient)
-   1. **forward event** to another address - poor man's approach to integrating with another calendar, i.e. work vs personal
-   1. common "today at a glance" views - with either today only showing slots for all hours -or- multiple days with just scheduled events showing
+   2. support **multiple reminders** feature of google calendar (missing from emClient)
+   3. **forward event** to another address - poor man's approach to integrating with another calendar, i.e. work vs personal
+   4. common "today at a glance" views - with either today only showing slots for all hours -or- multiple days with just scheduled events showing
 2. **Gmail adjunct strategy** - lean on the existing gmail web page for anything outside of my own day to day happy path to keep implementation as minimal as possible
 3. common window layout with nav down left side, inbox list next, then current email pane and lastly vertical calendar panel on the right...
 4. put the action buttons above the inbox vs the reading pane so they're always visible even for small window (mailbird annoyance)
@@ -20,9 +20,9 @@ Here at the inception this begins with the wishlist... can't believe i can't fin
 9. common mark-as-read behavior as emails are opened
 10. common keyboard nav, cursor up/down in inbox, tab through panels (again, ESC to minimize is a must!)
 11. **export folder** - seems like a nightmare feature to implement correctly
-   1. Evolution (listed below) is a good longstanding source of proper execution on several features including export - they dump to MBOX format which i now see is a well established standard that can be opened and read AND SEARCHED by many 3rd party tools... that's the way to go for this
-   2. <s>initially thinking a zip of emails printed to pdf along with bundling their attachements is probably the most "portable" approach... and maybe each email "thread/conversation" is a nested zip of leaf emails? i can't think of how you'd ever get something that could be reloaded as real emails</s>
-   3. google has it's own extract-your-data facility, have to see what format those come out as
+    1. Evolution (listed below) is a good longstanding source of proper execution on several features including export - they dump to MBOX format which i now see is a well established standard that can be opened and read AND SEARCHED by many 3rd party tools... that's the way to go for this
+    2. <s>initially thinking a zip of emails printed to pdf along with bundling their attachements is probably the most "portable" approach... and maybe each email "thread/conversation" is a nested zip of leaf emails? i can't think of how you'd ever get something that could be reloaded as real emails</s>
+    3. google has it's own extract-your-data facility, have to see what format those come out as
 
 ## app architecture
 1. besides actual app features, any modern app needs a streamlined build process... i use msft DevOps at work but this would be a good opportunity to get up to speed on github actions
