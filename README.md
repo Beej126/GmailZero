@@ -25,19 +25,19 @@ Here at the inception this begins with the wishlist... can't believe i can't fin
 ## app architecture
 1. besides actual app features, any modern app needs a streamlined build process... i use msft DevOps at work but this would be a good opportunity to get up to speed on github actions
 1. whether to do a web app vs desktop app... i'm deep into a very dense UX internal LoB React app during the day so i know i could do this in web only but still miss the sweet intersection of real C# object collections with built in onchange/isdirty along with M-V-VM style databinding like WPF
-1. there's also a handful of desktop window features that i believe are only possible via some kind of true desktop app wrapper (electron, react native, etc)
-  1. ESC to minimize window (along with close = minimize option)... previously i would've wanted this to a be a minimize to _systray_, but with Windows 11, minimizing to taskbar seems like the new way to go
-  1. taskbar badge for new email count (gotta have it)
+1. there's a handful of crucial desktop window features that i believe are only possible via some kind of true desktop app wrapper (electron, react native, etc)
+   1. ESC to minimize window (along with close = minimize option)... previously i would've wanted this to a be a minimize to _systray_, but with Windows 11, minimizing to taskbar seems like the new way to go
+   1. taskbar badge for new email count (gotta have it)
 1. state of the Windows Desktop DIS-union
-  1. right up front i'm a WPF fanboi from wayback... very cool msft has doubled down on supporting .net core
-  1. i guess UWP is now rolled into WinUI... has either reached feature parity with WPF yet?
-  1. i did a fair amount of xamarin on mobile ... that lineage is now rolled into MAUI, which is additionally targeting desktop apps, yet everybody's cranky that team doesn't have the bandwidth to include linux
-  1. looking around, the [Uno platform](https://platform.uno/) is probably the only real way to do this to include Linux right now circa 2021-Q4
-     - apparenlty they leverage WinUI for their Windows target
-     - this smells like it would be the classic compromise of accepting lowest common denominator functionality
-  1. to be fair, an email client probably? doesn't need to do anything all that fancy and lowest denom might not be a real limitiation
-  1. yet chasing the xplat holy grail really seems to leave all these rolling efforts perpetually short of tried and true feature parity with WPF... for this kind of personal project, i'm not really inclined to worry about xplat... macOS and Linux are definitely cool but the only real reason for me to spend precious energy on xplat would be to appeal for outside help and i'm not inclined for that on this project ... this is going to be highly tailored to my workflows, not trying to please anybody else.
-  1. Windows is way too cozy to envy anywhere else anymore - fully integrated linux including X-Windows GUI apps on WSL2/WSLg, and the longstanding availability of every little legacy app and tool there ever was, and FINALLY a real terminal
+   1. right up front i'm a WPF fanboi from wayback... very cool msft has doubled down on supporting .net core
+   1. i guess UWP is now rolled into WinUI... has either reached feature parity with WPF yet?
+   1. i did a fair amount of xamarin on mobile ... that lineage is now rolled into MAUI, which is additionally targeting desktop apps, yet everybody's cranky that team doesn't have the bandwidth to include linux
+   1. looking around, the [Uno platform](https://platform.uno/) is probably the only real way to do this to include Linux right now circa 2021-Q4
+      - apparenlty they leverage WinUI for their Windows target
+      - this smells like it would be the classic compromise of accepting lowest common denominator functionality
+   1. to be fair, an email client probably? doesn't need to do anything all that fancy and lowest denom might not be a real limitiation
+   1. yet chasing the xplat holy grail really seems to leave all these rolling efforts perpetually short of tried and true feature parity with WPF... for this kind of personal project, i'm not really inclined to worry about xplat... macOS and Linux are definitely cool but the only real reason for me to spend precious energy on xplat would be to appeal for outside help and i'm not inclined for that on this project ... this is going to be highly tailored to my workflows, not trying to please anybody else.
+   1. in spite of the chaotic spillover from xplat into desktop apps, the Windows ecosystem is way too cozy to envy anywhere else anymore - adding fully integrated linux including X-Windows GUI apps on WSL2/WSLg on top of the longstanding availability of every little legacy app and tool there ever was, along with FINALLY a robust Terminal, is a killer combo
 
 ## list of existing apps i've tried so far:
   - [Mailbird (commercial)](https://mailbird.com) - pretty nice in general but doesn't do wishlist #1 ([feature request #88155, created and ignored 2020-04](https://mailbird.featureupvote.com/suggestions/88155/calendar-convert-email-into-an-appointment-andor-task))
