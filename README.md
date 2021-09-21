@@ -36,7 +36,7 @@ Here at the inception this begins with the wishlist... can't believe i can't fin
      - apparenlty they leverage WinUI for their Windows target
      - this smells like it would be the classic compromise of accepting lowest common denominator functionality
   1. to be fair, an email client probably? doesn't need to do anything all that fancy and lowest denom might not be a real limitiation
-  1. yet chasing the xplat holy grail really seems to leave all these rolling efforts perpetually short of feature parity with WPF... and for this kind of personal project, i'm not really inclined to worry about xplat... macOS and Linux are definitely cool but the only real reason for me to spend precious energy on xplat would be to appeal for outside help and i'm not inclined for that on this project ... this is going to be highly tailored to my workflows, not trying to please anybody else.
+  1. yet chasing the xplat holy grail really seems to leave all these rolling efforts perpetually short of tried and true feature parity with WPF... for this kind of personal project, i'm not really inclined to worry about xplat... macOS and Linux are definitely cool but the only real reason for me to spend precious energy on xplat would be to appeal for outside help and i'm not inclined for that on this project ... this is going to be highly tailored to my workflows, not trying to please anybody else.
   1. Windows is way too cozy to envy anywhere else anymore - fully integrated linux including X-Windows GUI apps on WSL2/WSLg, and the longstanding availability of every little legacy app and tool there ever was, and FINALLY a real terminal
 
 ## list of existing apps i've tried so far:
