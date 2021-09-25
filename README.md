@@ -1,5 +1,5 @@
 # GmailZero
-Windows GMail &amp; Google Cal client focused on day-to-day
+GMail/GCal Windows app focused on day-to-day
 
 Here at the inception this begins with the wishlist... wild that we don't have a couple innocent calendar integration features under one roof after all these years.
 
