@@ -3,6 +3,20 @@ GMail/GCal Windows app focused on day-to-day
 
 Here at the inception this begins with the wishlist... wild that we don't have a couple innocent calendar integration features under one roof after all these years.
 
+## Really thinking this through
+- to really do this right, there's no getting around the need to integrate one's work calendar with their personal calendar...
+- they really have to be one and the same ...
+- for me that means Office 365 / Outlook...
+- and after all these years Outlook still has some big gaps:
+  1. can't do multiple recurring reminders!?
+  2. you can visually overlay two calendars rather nicely (including your google cal!) in the main calendar view but they don't support doing that in the "To Do" panel off to the right of your inbox, arrrg!!!
+- the other immovable constraint is the work calendar is shared out as the primary means for peers to book meetings, so i must maintain that calendar as the sum total of everything i'm scheduled for, both personally and professionally
+- as an aside, i really like how once you've defined multiple backend accounts in outlook, whenever you create and email it lets you choose where you're sending it from... this suggests a general pattern for the combined solution 
+- the only way i can see this all coming together is an app doing doing all the cal and imap apis for office 365 as well as showing the gmail inbox via imap as well...
+- would like to avoid the whole psync nightmare by only booking stuff on the outlook cal, no longer using the google cal at all, 
+- but my mental model REALLY requires the multiple reminders feature that outlook/365 just doesn't support ... at best you could probably tack it on as custom behavior in the desktop app but the real power of reminders of course happens through our mobile devices... i.e. the killer integration we get in the google ecosystem with android phones chiming us
+- so there's the rub... how the heck do we merge the work calendar with multiple reminders??? need to do some googling
+
 ## Wishlist / Design Goals
 1. this essentially starts with mailbird as a decent reference point UI wise and wanting to fix some crucial annoyances
 2. **Full calendar integration**
@@ -40,9 +54,9 @@ Here at the inception this begins with the wishlist... wild that we don't have a
    4. looking around, the [Uno platform](https://platform.uno/) is probably the only real way to do this to include Linux right now circa 2021-Q4
       - apparenlty they leverage WinUI for their Windows target
       - this smells like it would be the classic compromise of accepting lowest common denominator functionality
-   5. to be fair, an email client probably? doesn't need to do anything all that fancy and lowest denom might not be a real limitiation
+   5. to be fair, an email client probably? doesn't need to do anything all that fancy and lowest denom UI might not be a real limitiation
    6. yet chasing the xplat holy grail really seems to leave all these rolling efforts perpetually short of tried and true feature parity with WPF... for this kind of personal project, i'm not really inclined to worry about xplat... macOS and Linux are definitely cool but the only real reason for me to spend precious energy on xplat would be to appeal for outside help and i'm not inclined for that on this project ... this is going to be highly tailored to my workflows, not trying to please anybody else.
-   7. in spite of the chaotic spillover from xplat into desktop apps, the Windows ecosystem is way too cozy to envy anywhere else anymore - adding fully integrated linux including X-Windows GUI apps on WSL2/WSLg on top of the longstanding availability of every little legacy app and tool there ever was, along with FINALLY a robust Terminal, is a killer combo
+   7. despite the chaotic spillover from xplat into Windows desktop app dev, the Windows platform is still way too cozy to envy anywhere else anymore - adding fully integrated linux including X-Windows GUI apps via WSL2/WSLg on top of the longstanding availability of every little legacy Windows app and tool there ever was, along with FINALLY a robust Terminal, is a killer combo
    8. ha brilliant, good ol' [Delphi](https://www.embarcadero.com/products/delphi) is still kicking and apparently targets Windows, Mac, Linux AND iOS, Andoid!? those bloody rascals! ... funny thing, i am a huuge Borland and Delphi fanboi going back even further than WPF... nobody will remember this but i still remember the vestiges of how circa 2003 / Dephi 5 they shifted something low level completely over to the TClientDataSet, and broke the longstanding "cached updates" functionality that we were all in on with our LoB app... to Borland's credit, they were going after the future ... in this case it was the innevitible shift from client-server to 3-tiered... looking back at old posts, they were already making this move in Delphi 3 circa 1999!!! at the time we were of course very pissed to be innocent bystanders in that tidal wave of change, with nobody able to give us the time of day... forcing everything into a new paradigm without feature parity felt like the kind betrayal to expect from msft vs Borland... it felt like an artificial corporate decision vs engineering to break the old working bits due to the new bits... in hindsight, we were probably doing more advanced relational database implementation with Dephi than most shops achieve even to this day, and for better or worse, that meant nobody else cared enough to complain along side us.
 
 ## list of existing apps i've tried so far:
@@ -52,7 +66,7 @@ Here at the inception this begins with the wishlist... wild that we don't have a
      - another spin on where to invest my energy would be seeing if i could grok the mailspring codebase enough to enhance it... it sounds like it's c++ at it's core ([one interesting article from the main dev](https://community.getmailspring.com/t/a-free-open-source-future-for-mailspring/484))... interesting, the UI is React inside of Electron... that's pretty cool! i happen to be pretty dang good at React at this point =)
      - [hmmm actually seems to be some work on calendar circa 2020-Q1](https://github.com/Foundry376/Mailspring/issues/1492)...
      - ok it's progress but more than a year later none of my events are showing and there's a message: "Calendar is launching later this year"... gotta hand it to main dev @BenGotow ... cautionary story of how big of a lift this is to do solo =)
-     - at least he's got somewhat of a commercial model cooking for the pro features... hopefully that will keep this project alive for the long haul... nothing worse than an abandoned email client
+     - at least he's got somewhat of a commercial model cooking for the pro features... hopefully that will keep this project alive for the long haul... nothing worse than an abandoned email client project (as i look in the mirror ;)
      - and this UI looks really nice... the intro setup flow is beautiful work, GSuite called out properly, a truly pleasurable experience... especially after just stumbling through evolution's startup config =)
   - there's of course tons of email only clients out there, i.e. calendar support isn't on the radar at all
   - [Zimbra (Desktop)](https://www.zimbra.com/downloads/zimbra-desktop/) - DANG! discontinued in 2019, and now web client only... this looks like it was killer
