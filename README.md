@@ -11,11 +11,14 @@ The calendar aspects quickly take front stage... for me (especially after readin
   1. can't do multiple recurring reminders!?
   2. you can visually overlay two calendars rather nicely (including your external google cal!) in the main calendar view but they don't support doing that in the "To Do" panel off to the right of your inbox, arrrg!!!
 - another immovable constraint is the published work calendar is the primary means for others to see free time and book meetings... at least we have this well established at work, too bad that's not so standardized with everyone we interact with in our personal lives... we tend to all have our own calendars and they're not shared with eachother... there are apps that sit here and bridge that gap in clever ways (e.g. [Calendly](https://calendly.com)).
-- so far the only way i can see this all coming together is an app sitting in the middle, doing all the brute force to have everything on your abstract logical unified calendar, get shoved onto the two real calendars ...
-  -  it's not really a sync between the two... not exactly in that simple sense...
-  -  as mentioned above, everything needs to be on outlook,
-  -  but with outlook's reminder gap, we also have to put it all on google cal just to be reminded properly, that is wild
-  -  and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting reminders on our mobile devices, which is a huge part of the equation
+- so far the only way i can see this all coming together is an app sitting in the middle, doing all the brute force to put everything on both calendars
+  - as mentioned above, everything needs to be on outlook,
+  - but with outlook's reminder gap, we also have to put it all on google cal just to be reminded properly, that is wild
+  - and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting reminders on our mobile devices, which is a huge part of the equation
+- there are of course tons of sync tools:
+  - https://www.makeuseof.com/tag/how-to-sync-microsoft-outlook-with-google-calendar/
+- it seems like you could consider gmail the master and sync everything back to outlook...
+- but there are bound to be glitches there... one critical behavior to check is how recurring appointments copy over
 
 ## Wishlist / Design Goals
 1. this essentially starts with mailbird as a decent reference point UI wise and wanting to fix some crucial annoyances
@@ -84,5 +87,7 @@ The calendar aspects quickly take front stage... for me (especially after readin
 - https://github.com/jstedfast/MailKit
 - https://jasonwatmore.com/post/2020/07/15/aspnet-core-3-send-emails-via-smtp-with-mailkit
 - https://docs.github.com/en/actions/guides/building-and-testing-net
+- https://docs.microsoft.com/en-us/microsoft-edge/webview2/get-started/wpf
+- https://weblog.west-wind.com/posts/2021/Jan/14/Taking-the-new-Chromium-WebView2-Control-for-a-Spin-in-NET-Part-1
 - Infragistics has a [WPF sample demo that mocks a basic Outlook'ish UI](https://www.infragistics.com/resources/sample-applications/infragistics-wpf-igoutlook)... it's all hard wired to fake data but it might be a nice starting point
   - i've successfully upgraded it to .Net 5.0 (thank you [Upgrade Assistant Tool](https://dotnet.microsoft.com/platform/upgrade-assistant)!!!) along with the tweaks required  to align with infragistics latest packages ([v21.1](https://www.infragistics.com/support/product-lifecycle))
