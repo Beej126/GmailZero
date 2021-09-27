@@ -84,5 +84,5 @@ The calendar aspects quickly take front stage... for me (especially after readin
 - https://github.com/jstedfast/MailKit
 - https://jasonwatmore.com/post/2020/07/15/aspnet-core-3-send-emails-via-smtp-with-mailkit
 - https://docs.github.com/en/actions/guides/building-and-testing-net
-- Infragistics has a WPF sample demo that mocks a basic Outlook'ish UI... it's all hard wired to fake data but it might be a nice starting point ...
-  - i've now successfully upgraded it to .Net 5.0 (thank you [Upgrade Assistant Tool](https://dotnet.microsoft.com/platform/upgrade-assistant)!!!) along with the tweaks required  to align with infragistics latest packages ([v21.1](https://www.infragistics.com/support/product-lifecycle))
+- Infragistics has a [WPF sample demo that mocks a basic Outlook'ish UI](https://www.infragistics.com/resources/sample-applications/infragistics-wpf-igoutlook)... it's all hard wired to fake data but it might be a nice starting point
+  - i've successfully upgraded it to .Net 5.0 (thank you [Upgrade Assistant Tool](https://dotnet.microsoft.com/platform/upgrade-assistant)!!!) along with the tweaks required  to align with infragistics latest packages ([v21.1](https://www.infragistics.com/support/product-lifecycle))
