@@ -1,21 +1,21 @@
 # GmailZero
-GMail/GCal Windows app focused on day-to-day
+This idea started out as a simple GMail/GCal Windows app focused on day-to-day
 
-Here at the inception this begins with the wishlist... wild that we don't have a couple innocent calendar integration features under one roof after all these years.
+The calendar aspects quickly take front stage... for me (especially after reading this [great Wired article](https://www.wired.com/story/to-do-apps-failed-productivity-tools/)) so much of what comes through the inbox MUST wind up on your calendar... the article coins the strategy as "time blocking"... and the crystal clear nutshell for me is, don't focus on to-do lists anymore, put everything you want to accomplish on your calendar, and anything new that comes long must either fit or replace something else already there... this quite literally shows you exactly what you have time to accomplish.
 
 ## Really thinking this through
 - to really do this right, there's no getting around the need to integrate one's work calendar with their personal calendar...
-- they really have to be one and the same ...
-- for me that means Office 365 / Outlook...
-- and after all these years Outlook still has some big gaps:
+- they really have to be one and the same, the sum total of everything that you're booked for... especially these days now that we're working a lot more from home and weaving life and work together in more dynamic ways than what used to be a more cut and dried 9-5
+- for me that means Office 365 / Outlook for work and GMail/GCall for personal...
+- after all these years, Outlook still has at least two critical gaps for my needs:
   1. can't do multiple recurring reminders!?
-  2. you can visually overlay two calendars rather nicely (including your google cal!) in the main calendar view but they don't support doing that in the "To Do" panel off to the right of your inbox, arrrg!!!
-- the other immovable constraint is the work calendar is shared out as the primary means for peers to book meetings, so i must maintain that calendar as the sum total of everything i'm scheduled for, both personally and professionally
-- as an aside, i really like how once you've defined multiple backend accounts in outlook, whenever you create and email it lets you choose where you're sending it from... this suggests a general pattern for the combined solution 
-- the only way i can see this all coming together is an app doing doing all the cal and imap apis for office 365 as well as showing the gmail inbox via imap as well...
-- would like to avoid the whole psync nightmare by only booking stuff on the outlook cal, no longer using the google cal at all, 
-- but my mental model REALLY requires the multiple reminders feature that outlook/365 just doesn't support ... at best you could probably tack it on as custom behavior in the desktop app but the real power of reminders of course happens through our mobile devices... i.e. the killer integration we get in the google ecosystem with android phones chiming us
-- so there's the rub... how the heck do we merge the work calendar with multiple reminders??? need to do some googling
+  2. you can visually overlay two calendars rather nicely (including your external google cal!) in the main calendar view but they don't support doing that in the "To Do" panel off to the right of your inbox, arrrg!!!
+- another immovable constraint is the published work calendar is the primary means for others to see free time and book meetings... at least we have this well established at work, too bad that's not so standardized with everyone we interact with in our personal lives... we tend to all have our own calendars and they're not shared with eachother... there are apps that sit here and bridge that gap in clever ways (e.g. [Calendly](https://calendly.com)).
+- so far the only way i can see this all coming together is an app sitting in the middle, doing all the brute force to have everything on your abstract logical unified calendar, get shoved onto the two real calendars ...
+  -  it's not really a sync between the two... not exactly in that simple sense...
+  -  as mentioned above, everything needs to be on outlook,
+  -  but with outlook's reminder gap, we also have to put it all on google cal just to be reminded properly, that is wild
+  -  and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting reminders on our mobile devices, which is a huge part of the equation
 
 ## Wishlist / Design Goals
 1. this essentially starts with mailbird as a decent reference point UI wise and wanting to fix some crucial annoyances
@@ -24,14 +24,16 @@ Here at the inception this begins with the wishlist... wild that we don't have a
    2. support **multiple reminders** feature of google calendar (missing from emClient)
    3. **forward event** to another address - poor man's approach to integrating with another calendar, i.e. work vs personal
    4. common "today at a glance" views - with either today only showing slots for all hours -or- multiple days with just scheduled events showing
-3. common window layout with folder nav down left side, inbox list in the middle, current email reading pane next to the right and lastly a vertical calendar panel on the far right...
-4. put the action buttons above the inbox vs the reading pane so they're always visible even for small window (mailbird annoyance)
-5. multiple inboxes! pretty killer feature i use in the gmail web app... basically it's the idea of showing more "folders" at once than just a primary inbox... couple this with gmail's amazingly robust (albeit unfriendly) filter rules and you can do powerful "auto cleansing", which is very [inbox zero](https://en.wikipedia.org/wiki/Merlin_Mann) zen... i like keeping a "pending" and "kids" view... pending is a manual move but kids vacuums up a ton of different inbound stuff via filters
-6. **favorite folders** - up at the top of the left side nav (missing from mailbird)
-7. **move-to-folder** action button (with favorite folders at the top of list)
-8. the obvious right mouse actions and buttons: delete, move to folder, reply, forward, move to calendar!, create new email (i tend to not want to blindly "archive", if i want to keep, i want to put in specific folder), mark as unread
-9. common mark-as-read behavior as emails are opened
-10. common keyboard nav, cursor up/down in inbox, tab through panels (again, ESC to minimize is a must!)
+3. common window layout with folder nav down left side, inbox list in the middle, current email reading pane next to the right
+4. and very important, **a vertical UNIFIED calendar panel on the far right**...
+5. with drag and drop from the unified inbox to a time slot on the calendar
+6. action buttons - typical button bar above the inbox vs the reading pane so they're always visible even for small window (mailbird annoyance)
+7. multiple inboxes! pretty killer feature i use in the gmail web app... basically it's the idea of showing more "folders" at once than just a primary inbox... couple this with gmail's amazingly robust (albeit unfriendly) filter rules and you can do powerful "auto cleansing", which is very [inbox zero](https://en.wikipedia.org/wiki/Merlin_Mann) zen... i like keeping a "pending" and "kids" view... pending is a manual move but kids vacuums up a ton of different inbound stuff via filters
+8. **favorite folders** - up at the top of the left side nav (missing from mailbird)
+9. **move-to-folder** action button (with favorite folders at the top of list)
+10. the obvious right mouse actions and buttons: delete, move to folder, reply, forward, move to calendar!, create new email (i tend to not want to blindly "archive", if i want to keep, i want to put in specific folder), mark as unread
+11. common mark-as-read behavior as emails are opened
+12. common keyboard nav, cursor up/down in inbox, tab through panels (again, ESC to minimize is a must!)
 
 ## Gmail "adjunct" strategy
 - lean on the existing gmail web page for anything outside of my own day to day happy path to keep implementation as minimal as possible
@@ -82,3 +84,5 @@ Here at the inception this begins with the wishlist... wild that we don't have a
 - https://github.com/jstedfast/MailKit
 - https://jasonwatmore.com/post/2020/07/15/aspnet-core-3-send-emails-via-smtp-with-mailkit
 - https://docs.github.com/en/actions/guides/building-and-testing-net
+- Infragistics has a WPF sample demo that mocks a basic Outlook'ish UI... it's all hard wired to fake data but it might be a nice starting point ...
+  - i've now successfully upgraded it to .Net 5.0 (thank you [Upgrade Assistant Tool](https://dotnet.microsoft.com/platform/upgrade-assistant)!!!) along with the tweaks required  to align with infragistics latest packages ([v21.1](https://www.infragistics.com/support/product-lifecycle))
