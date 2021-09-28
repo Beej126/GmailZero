@@ -15,7 +15,7 @@ The calendar aspects quickly take front stage... for me (especially after readin
   - as mentioned above, everything needs to be on outlook,
   - but with outlook's reminder gap, we also have to put it all on google cal just to be reminded properly, that is wild
   - and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting reminders on our mobile devices, which is a huge part of the equation
-- there are of course tons of sync tools, [started list below]()
+- there are of course tons of sync tools, [started list below](#sync-tools)
 - it seems like you could consider gmail the master and sync everything back to outlook...
 - but there are bound to be glitches there... one critical behavior to check is how recurring appointments copy over
 
