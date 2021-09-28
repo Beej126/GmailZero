@@ -15,8 +15,7 @@ The calendar aspects quickly take front stage... for me (especially after readin
   - as mentioned above, everything needs to be on outlook,
   - but with outlook's reminder gap, we also have to put it all on google cal just to be reminded properly, that is wild
   - and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting reminders on our mobile devices, which is a huge part of the equation
-- there are of course tons of sync tools:
-  - https://www.makeuseof.com/tag/how-to-sync-microsoft-outlook-with-google-calendar/
+- there are of course tons of sync tools, [started list below]()
 - it seems like you could consider gmail the master and sync everything back to outlook...
 - but there are bound to be glitches there... one critical behavior to check is how recurring appointments copy over
 
@@ -81,6 +80,9 @@ The calendar aspects quickly take front stage... for me (especially after readin
 
 ## actual contenders!
 - [Evolution](https://riseup.net/en/email/clients/evolution) - Linux only but now that Windows runs WSLg that's not a deal breaker... it does the basic create event from email! no drag drop unfortunately... but the setup and initial layout are very usable... will give this a go!
+
+## sync tools
+- https://www.makeuseof.com/tag/how-to-sync-microsoft-outlook-with-google-calendar/
 
 ## development references
 - https://developers.google.com/calendar/api/quickstart/dotnet
