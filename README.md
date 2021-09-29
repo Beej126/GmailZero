@@ -1,7 +1,7 @@
 # GmailZero
 This idea started out as a simple GMail/GCal Windows app focused on day-to-day
 
-The calendar aspects quickly take front stage... for me (especially after reading this [great Wired article](https://www.wired.com/story/to-do-apps-failed-productivity-tools/)) so much of what comes through the inbox MUST wind up on your calendar... the article coins the strategy as "time blocking"... and the crystal clear nutshell for me is, don't focus on to-do lists anymore, put everything you want to accomplish on your calendar, and anything new that comes long must either fit into the gaps or replace something... this quite literally shows you exactly what you do and don't have time to accomplish... keeping lists beyond that is not only pointless, it saps precious psychological energy.
+The calendar aspects quickly take front stage... for me (especially after reading this [great Wired article](https://www.wired.com/story/to-do-apps-failed-productivity-tools/)) so much of what comes through the inbox MUST wind up on your calendar... the article coins the strategy as "time blocking"... and the crystal clear nutshell is this: don't focus on to-do lists anymore, put everything you want to accomplish on your calendar, and anything new that comes long must either fit into the gaps or replace something... this quite literally shows you exactly what you do and don't have time to accomplish... keeping lists beyond that is not only pointless, it saps precious psychological energy.
 
 ## Really thinking this through
 - to really do this right, there's no getting around the need to integrate one's work calendar with their personal calendar...
