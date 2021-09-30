@@ -39,6 +39,10 @@ and the crystal clear nutshell is this: <mark><span style="background-color: yel
 11. common mark-as-read behavior as emails are opened
 12. common keyboard nav, cursor up/down in inbox, tab through panels (again, ESC to minimize is a must!)
 
+## External Wishlist
+1. From Brad: gmail complaint - when writing an email and then i want to refer to what someone said i have to scroll for a long time to get to the last response
+   - to be frank, i just don't see it... it seems like gmail does this pretty well already... i'll have to get a copy of his worst case example
+
 ## Gmail "adjunct" strategy
 - lean on the existing gmail web page for anything outside of my own day to day happy path to keep implementation as minimal as possible
 - and probably just run gmail in an embedded web control to have it close it at hand
