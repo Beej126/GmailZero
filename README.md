@@ -21,7 +21,7 @@ and the crystal clear nutshell is this: <mark><span style="background-color: yel
 - it seems like you could consider gmail the master and sync everything back to outlook...
 - but there are bound to be glitches there... one critical behavior to check is how recurring appointments copy over
 
-## Wishlist / Design Goals
+## My Wishlist / Design Goals
 1. this essentially starts with mailbird as a decent reference point UI wise and wanting to fix some crucial annoyances
 2. **Full calendar integration**
    1. #1 **create calendar event from email** (missing from mailbird)
