@@ -5,7 +5,7 @@ The calendar aspects quickly take front stage... for me (especially after readin
 
 and the crystal clear nutshell is this: <mark><span style="background-color: yellow">**don't focus on to-do lists anymore, put everything you want to accomplish on your calendar**</span></mark>, and anything new that comes long must either fit into the gaps or replace something... this quite literally shows you exactly what you do and don't have time to accomplish... keeping lists beyond that is not only pointless, it saps precious psychological energy.
 
-## Really thinking this through
+## core purpose of this app
 - to really do this right, there's no getting around the need to integrate one's work calendar with their personal calendar...
 - they really have to be one and the same, the sum total of everything that you're booked for... especially these days now that we're working a lot more from home and weaving life and work together in more dynamic ways than what used to be a more cut and dried 9-5
 - for me that means Office 365 / Outlook for work and GMail/GCall for personal...
