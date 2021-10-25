@@ -16,7 +16,7 @@ and the crystal clear nutshell is this: <mark><span style="background-color: yel
 - so far the only way i can see this all coming together is an app sitting in the middle, doing all the brute force to put everything on both calendars
   - as mentioned above, everything needs to be on outlook,
   - but with outlook's reminder gap, we also have to put it all on google cal just to be reminded properly, that is wild
-  - and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting reminders on our mobile devices, which is a huge part of the equation
+  - and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting consistent reminders on our mobile devices as well, which is a huge necessary part of a true solve
 - there are of course tons of sync tools, [started list below](#sync-tools)
 - it seems like you could consider gmail the master and sync everything back to outlook...
 - but there are bound to be glitches there... one critical behavior to check is how recurring appointments copy over
