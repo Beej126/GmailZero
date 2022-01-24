@@ -1,5 +1,7 @@
 # GmailZero
-This idea started out as a simple GMail/GCal Windows app focused on day-to-day
+This is currently just a dumping ground for wish list and design, there is no code yet at all.
+
+My core want is a GMail/GCal client that does things more streamlined with my day-to-day workflows
 
 The calendar aspects quickly take front stage... for me (especially after reading this [great Wired article](https://www.wired.com/story/to-do-apps-failed-productivity-tools/)) so much of what comes through the inbox MUST wind up on your calendar... the article coins the strategy as "time blocking"... 
 
