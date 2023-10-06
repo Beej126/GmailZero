@@ -24,22 +24,22 @@ and the crystal clear nutshell is this: <mark><span style="background-color: yel
 - but there are bound to be glitches there... one critical behavior to check is how recurring appointments copy over
 
 ## My Wishlist / Design Goals
-1. this essentially starts with mailbird as a decent reference point UI wise and wanting to fix some crucial annoyances
-2. **Full calendar integration**
+this essentially starts with mailbird as a decent reference point UI wise and wanting to fix some crucial annoyances
+1. **Full calendar integration**
    1. #1 **create calendar event from email** (missing from mailbird)
    2. support **multiple reminders** feature of google calendar (missing from emClient)
    3. **forward event** to another address - poor man's approach to integrating with another calendar, i.e. work vs personal
    4. common "today at a glance" views - with either today only showing slots for all hours -or- multiple days with just scheduled events showing
-3. common window layout with folder nav down left side, inbox list in the middle, current email reading pane next to the right
-4. and very important, **a vertical UNIFIED calendar panel on the far right**...
-5. with drag and drop from the unified inbox to a time slot on the calendar
-6. action buttons - typical button bar above the inbox vs the reading pane so they're always visible even for small window (mailbird annoyance)
-7. multiple inboxes! pretty killer feature i use in the gmail web app... basically it's the idea of showing more "folders" at once than just a primary inbox... couple this with gmail's amazingly robust (albeit unfriendly) filter rules and you can do powerful "auto cleansing", which is very [inbox zero](https://en.wikipedia.org/wiki/Merlin_Mann) zen... i like keeping a "pending" and "kids" view... pending is a manual move but kids vacuums up a ton of different inbound stuff via filters
-8. **favorite folders** - up at the top of the left side nav (missing from mailbird)
-9. **move-to-folder** action button (with favorite folders at the top of list)
-10. the obvious right mouse actions and buttons: delete, move to folder, reply, forward, move to calendar!, create new email (i tend to not want to blindly "archive", if i want to keep, i want to put in specific folder), mark as unread
-11. common mark-as-read behavior as emails are opened
-12. common keyboard nav, cursor up/down in inbox, tab through panels (again, ESC to minimize is a must!)
+1. common window layout with folder nav down left side, inbox list in the middle, current email reading pane next to the right
+1. and very important, **a vertical UNIFIED calendar panel on the far right**...
+1. with drag and drop from the unified inbox to a time slot on the calendar
+1. action buttons - typical button bar above the inbox vs the reading pane so they're always visible even for small window (mailbird annoyance)
+1. multiple inboxes! pretty killer feature i use in the gmail web app... basically it's the idea of showing more "folders" at once than just a primary inbox... couple this with gmail's amazingly robust (albeit unfriendly) filter rules and you can do powerful "auto cleansing", which is very [inbox zero](https://en.wikipedia.org/wiki/Merlin_Mann) zen... i like keeping a "pending" and "kids" view... pending is a manual move but kids vacuums up a ton of different inbound stuff via filters
+1. **favorite folders** - up at the top of the left side nav (missing from mailbird)
+1. **move-to-folder** action button (with favorite folders at the top of list)
+1. the obvious right mouse actions and buttons: delete, move to folder, reply, forward, move to calendar!, create new email (i tend to not want to blindly "archive", if i want to keep, i want to put in specific folder), mark as unread
+1. common mark-as-read behavior as emails are opened
+1. common keyboard nav, cursor up/down in inbox, tab through panels (again, ESC to minimize is a must!)
 
 ## External Wishlist
 1. From Brad: gmail complaint - when writing an email and then i want to refer to what someone said i have to scroll for a long time to get to the last response
@@ -55,21 +55,25 @@ and the crystal clear nutshell is this: <mark><span style="background-color: yel
 
 ## app architecture
 1. besides actual app features, any modern app needs a streamlined build process... i use msft DevOps at work but this would be a good opportunity to get up to speed on github actions
-2. whether to do a web app vs desktop app... i'm deep into a very dense UX internal LoB React app during the day so i know i could do this in web only but still miss the sweet intersection of real C# object collections with built in onchange/isdirty along with M-V-VM style databinding like WPF
-3. there's a handful of crucial desktop window features that i believe are only possible via some kind of true desktop app wrapper (electron, react native, etc)
+1. whether to do a web app vs desktop app... i'm deep into a very dense UX internal LoB React app during the day so i know i could do this in web only but still miss the sweet intersection of real C# object collections with built in onchange/isdirty along with M-V-VM style databinding like WPF
+1. there's a handful of crucial desktop window features that i believe are only possible via some kind of true desktop app wrapper (electron, react native, etc)
    1. ESC to minimize window (along with close = minimize option)... previously i would've wanted this to a be a minimize to _systray_, but with Windows 11, minimizing to taskbar seems like the new way to go
-   2. taskbar badge for new email count (gotta have it)
-4. to xplat or not, -OR- the state of the Windows Desktop DIS-union
+   1. taskbar badge for new email count (gotta have it)
+1. to xplat or not, -OR- the state of the Windows Desktop DIS-union
    1. right up front i'm a WPF fanboi from wayback... very cool msft has doubled down on supporting .net core
-   2. i guess UWP is now rolled into WinUI... has either reached feature parity with WPF yet?
-   3. i did a fair amount of xamarin on mobile ... that lineage is now rolled into MAUI, which is additionally targeting desktop apps, yet everybody's cranky that team doesn't have the bandwidth to include linux
-   4. looking around, the [Uno platform](https://platform.uno/) is probably the only real way to do this to include Linux right now circa 2021-Q4
+   1. i guess UWP is now rolled into WinUI... has either reached feature parity with WPF yet?
+   1. i did a fair amount of xamarin on mobile ... that lineage is now rolled into MAUI, which is additionally targeting desktop apps, yet everybody's cranky that team doesn't have the bandwidth to include linux
+   1. looking around, the [Uno platform](https://platform.uno/) is probably the only real way to do this to include Linux right now circa 2021-Q4
       - apparenlty they leverage WinUI for their Windows target
       - this smells like it would be the classic compromise of accepting lowest common denominator functionality
-   5. to be fair, an email client probably? doesn't need to do anything all that fancy and lowest denom UI might not be a real limitiation
-   6. yet chasing the xplat holy grail really seems to leave all these rolling efforts perpetually short of tried and true feature parity with WPF... for this kind of personal project, i'm not really inclined to worry about xplat... macOS and Linux are definitely cool but the only real reason for me to spend precious energy on xplat would be to appeal for outside help and i'm not inclined for that on this project ... this is going to be highly tailored to my workflows, not trying to please anybody else.
-   7. despite the chaotic spillover from xplat into Windows desktop app dev, the Windows platform is still way too cozy to envy anywhere else anymore - adding fully integrated linux including X-Windows GUI apps via WSL2/WSLg on top of the longstanding availability of every little legacy Windows app and tool there ever was, along with FINALLY a robust Terminal, is a killer combo
-   8. ha brilliant, good ol' [Delphi](https://www.embarcadero.com/products/delphi) is still kicking and apparently targets Windows, Mac, Linux AND iOS, Andoid!? those bloody rascals! ... funny thing, i am a huuge Borland and Delphi fanboi going back even further than WPF... nobody will remember this but i still remember the vestiges of how circa 2003 / Dephi 5 they shifted something low level completely over to the TClientDataSet, and broke the longstanding "cached updates" functionality that we were all in on with our LoB app... to Borland's credit, they were going after the future ... in this case it was the innevitible shift from client-server to 3-tiered... looking back at old posts, they were already making this move in Delphi 3 circa 1999!!! at the time we were of course very pissed to be innocent bystanders in that tidal wave of change, with nobody able to give us the time of day... forcing everything into a new paradigm without feature parity felt like the kind betrayal to expect from msft vs Borland... it felt like an artificial corporate decision vs engineering to break the old working bits due to the new bits... in hindsight, we were probably doing more advanced relational database implementation with Dephi than most shops achieve even to this day, and for better or worse, that meant nobody else cared enough to complain along side us.
+   1. to be fair, an email client probably? doesn't need to do anything all that fancy and lowest denom UI might not be a real limitiation
+   1. yet chasing the xplat holy grail really seems to leave all these rolling efforts perpetually short of tried and true feature parity with WPF... for this kind of personal project, i'm not really inclined to worry about xplat... macOS and Linux are definitely cool but the only real reason for me to spend precious energy on xplat would be to appeal for outside help and i'm not inclined for that on this project ... this is going to be highly tailored to my workflows, not trying to please anybody else.
+   1. despite the chaotic spillover from xplat into Windows desktop app dev, the Windows platform is still way too cozy to envy anywhere else anymore - adding fully integrated linux including X-Windows GUI apps via WSL2/WSLg on top of the longstanding availability of every little legacy Windows app and tool there ever was, along with FINALLY a robust Terminal, is a killer combo
+   1. ha brilliant, good ol' [Delphi](https://www.embarcadero.com/products/delphi) is still kicking and apparently targets Windows, Mac, Linux AND iOS, Andoid!? those bloody rascals! ... funny thing, i am a huuge Borland and Delphi fanboi going back even further than WPF... nobody will remember this but i still remember the vestiges of how circa 2003 / Dephi 5 they shifted something low level completely over to the TClientDataSet, and broke the longstanding "cached updates" functionality that we were all in on with our LoB app... to Borland's credit, they were going after the future ... in this case it was the innevitible shift from client-server to 3-tiered... looking back at old posts, they were already making this move in Delphi 3 circa 1999!!! at the time we were of course very pissed to be innocent bystanders in that tidal wave of change, with nobody able to give us the time of day... forcing everything into a new paradigm without feature parity felt like the kind betrayal to expect from msft vs Borland... it felt like an artificial corporate decision vs engineering to break the old working bits due to the new bits... in hindsight, we were probably doing more advanced relational database implementation with Dephi than most shops achieve even to this day, and for better or worse, that meant nobody else cared enough to complain along side us.
+   1. circa Q4 2023 [Avalonia](https://docs.avaloniaui.net/docs/next/faq#can-i-cross-compile-for-different-platforms) (v11) is something to consider... they now have xplat UI for all major platforms including mobile... given their "Spiritual Successor to WPF" tagline, i'm interested...
+   1. but the longer i get proficident with React and javascript's native collections like Map the less i am tugged back to needing C# under my UI and web only deploy sounds so much easier than getting all the xplat deployment packaging right...
+      - if i look at gmail, gcal, outlook cal there's not a whole lot of interactive stuff that would be intimidating to accomplish in React... it looks like primarily read-only display, hinged on efficient arrangement of panel areas... the main ways to change state would be 1) a singular active rich edit active at any given time, 2) a bunch of action buttons everywhere and 3) a little bit of drag/drop
+      - my biggest question is what the gmail api winds up providing for combining individual emails into "conversations" like their UI does
 
 ## list of existing apps i've tried so far:
   - [Mailbird (commercial)](https://mailbird.com) - pretty nice in general but doesn't do wishlist #1 ([feature request #88155, created and ignored 2020-04](https://mailbird.featureupvote.com/suggestions/88155/calendar-convert-email-into-an-appointment-andor-task))
