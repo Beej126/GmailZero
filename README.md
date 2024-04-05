@@ -16,7 +16,7 @@ and the crystal clear nutshell is this: <mark><span style="background-color: yel
   2. you can visually overlay two calendars rather nicely (including your external google cal!) in the main calendar view but they don't support doing that in the "To Do" panel off to the right of your inbox, arrrg!!!
 - another immovable constraint is the published work calendar is the primary means for others to see free time and book meetings... at least we have this well established at work, too bad that's not so standardized with everyone we interact with in our personal lives... we tend to all have our own calendars and they're not shared with eachother... there are apps that sit here and bridge that gap in clever ways (e.g. [Calendly](https://calendly.com)).
 - so far the only way i can see this all coming together is an app sitting in the middle, doing all the brute force to put everything on both calendars
-  - as mentioned above, everything needs to be on outlook,
+  - as mentioned above, **everything needs to be on outlook**, because work is outlook so that's all anyone else would be able to see for my availability
   - but with outlook's reminder gap, we also have to put it all on google cal just to be reminded properly, that is wild
   - and it's not like it all happens in this magic app alone, by getting events on the google cal, that leverages getting consistent reminders on our mobile devices as well, which is a huge necessary part of a true solve
 - there are of course tons of sync tools, [started list below](#sync-tools)
